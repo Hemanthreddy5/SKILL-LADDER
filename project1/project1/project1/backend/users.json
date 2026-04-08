@@ -1,0 +1,68 @@
+[
+  {
+    "email": "sasank@gmail.com",
+    "password": "d6723fa996ced47773f2dea29cce9b11f951e6dafe321a84ac7d32791c3b4660",
+    "role": "student",
+    "history": []
+  },
+  {
+    "email": "saran@gmail.com",
+    "password": "12f26af0dcdfae8fe4331d6a4c369edd549220cdeb119b3b1831b2a2cf77f281",
+    "role": "student",
+    "history": []
+  },
+  {
+    "email": "na@gmail.com",
+    "password": "12f26af0dcdfae8fe4331d6a4c369edd549220cdeb119b3b1831b2a2cf77f281",
+    "role": "employee",
+    "history": []
+  },
+  {
+    "email": "ab@gmail.com",
+    "password": "12f26af0dcdfae8fe4331d6a4c369edd549220cdeb119b3b1831b2a2cf77f281",
+    "role": "employee",
+    "history": []
+  },
+  {
+    "email": "sas@gmail.com",
+    "password": "12f26af0dcdfae8fe4331d6a4c369edd549220cdeb119b3b1831b2a2cf77f281",
+    "role": "student",
+    "history": []
+  },
+  {
+    "email": "mahi@gmil.com",
+    "password": "12f26af0dcdfae8fe4331d6a4c369edd549220cdeb119b3b1831b2a2cf77f281",
+    "role": "employee",
+    "history": []
+  },
+  {
+    "email": "ra@gmail.com",
+    "password": "12f26af0dcdfae8fe4331d6a4c369edd549220cdeb119b3b1831b2a2cf77f281",
+    "role": "employee",
+    "history": []
+  },
+  {
+    "email": "no@gmail.com",
+    "password": "12f26af0dcdfae8fe4331d6a4c369edd549220cdeb119b3b1831b2a2cf77f281",
+    "role": "job_seeker",
+    "history": [],
+    "name": "sai",
+    "phone": "852585865555555",
+    "graduation_year": "2026",
+    "study_year": "4th Year",
+    "degree_type": "BTech",
+    "college_name": "kare"
+  },
+  {
+    "email": "no1@gmail.com",
+    "password": "12f26af0dcdfae8fe4331d6a4c369edd549220cdeb119b3b1831b2a2cf77f281",
+    "role": "job_provider",
+    "history": []
+  },
+  {
+    "email": "sa@gmail.com",
+    "password": "12f26af0dcdfae8fe4331d6a4c369edd549220cdeb119b3b1831b2a2cf77f281",
+    "role": "job_provider",
+    "history": []
+  }
+]

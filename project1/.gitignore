@@ -1,0 +1,32 @@
+# Large executables
+firebase-tools-instant-win.exe
+*.exe
+
+# Environment and Virtual Environments
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# Dependencies
+node_modules/
+bower_components/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Firebase & Secrets
+*firebase-service-account.json
+*.json.key
+secrets.json
+.runtimeconfig.json
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo

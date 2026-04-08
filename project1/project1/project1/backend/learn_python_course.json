@@ -1,0 +1,226 @@
+{
+  "course_id": "learn-python",
+  "course_name": "Learn Python",
+  "modules": [
+    {
+      "module_id": "m1",
+      "title": "Introduction to Python",
+      "difficulty": "Easy",
+      "description": "Understand what Python is and why it is popular.",
+      "content": {
+        "explanation": "Python is a readable and beginner-friendly language used in web apps, automation, AI, and data science.",
+        "key_points": [
+          "Python syntax is simple and clean.",
+          "It runs on many platforms.",
+          "Large community and library support."
+        ],
+        "example_code": "print(\"Welcome to Python\")\nname = \"Skill Ladder\"\nprint(\"Learning with\", name)"
+      },
+      "quiz": [
+        { "question_id": "m1q1", "question": "Python is mainly known for:", "options": ["Complex syntax", "Readability", "No libraries", "Only mobile apps"], "correct_index": 1 },
+        { "question_id": "m1q2", "question": "Which function prints output?", "options": ["echo()", "display()", "print()", "write()"], "correct_index": 2 },
+        { "question_id": "m1q3", "question": "Python is:", "options": ["Platform dependent", "Platform independent", "Only Windows", "Only Linux"], "correct_index": 1 },
+        { "question_id": "m1q4", "question": "Python files usually end with:", "options": [".java", ".py", ".cpp", ".js"], "correct_index": 1 },
+        { "question_id": "m1q5", "question": "Python can be used for:", "options": ["AI", "Web", "Automation", "All of these"], "correct_index": 3 }
+      ]
+    },
+    {
+      "module_id": "m2",
+      "title": "Variables and Data Types",
+      "difficulty": "Easy",
+      "description": "Learn how Python stores and identifies values.",
+      "content": {
+        "explanation": "Variables are names that point to values. Python automatically detects type such as int, float, str, and bool.",
+        "key_points": [
+          "No need to declare type explicitly.",
+          "Use meaningful variable names.",
+          "Check type with type()."
+        ],
+        "example_code": "age = 21\nprice = 99.5\nname = \"Asha\"\nis_active = True\nprint(type(age), type(price), type(name), type(is_active))"
+      },
+      "quiz": [
+        { "question_id": "m2q1", "question": "Which type stores text?", "options": ["int", "float", "str", "bool"], "correct_index": 2 },
+        { "question_id": "m2q2", "question": "What does type(x) return?", "options": ["Value", "Datatype", "Length", "Error"], "correct_index": 1 },
+        { "question_id": "m2q3", "question": "Which is a valid variable name?", "options": ["2name", "user_name", "class", "my-name"], "correct_index": 1 },
+        { "question_id": "m2q4", "question": "True/False values use:", "options": ["char", "str", "bool", "list"], "correct_index": 2 },
+        { "question_id": "m2q5", "question": "Python variable type is:", "options": ["Fixed forever", "Detected at runtime", "Always int", "Not available"], "correct_index": 1 }
+      ]
+    },
+    {
+      "module_id": "m3",
+      "title": "Operators",
+      "difficulty": "Easy",
+      "description": "Use arithmetic, comparison, and logical operators.",
+      "content": {
+        "explanation": "Operators perform actions on values, like math, comparisons, and logical checks.",
+        "key_points": [
+          "Arithmetic: +, -, *, /, //, %, **",
+          "Comparison: ==, !=, >, <, >=, <=",
+          "Logical: and, or, not"
+        ],
+        "example_code": "a, b = 10, 3\nprint(a + b, a // b, a % b)\nprint(a > b, a == b)\nprint(a > 5 and b < 5)"
+      },
+      "quiz": [
+        { "question_id": "m3q1", "question": "5 // 2 gives:", "options": ["2.5", "2", "3", "0"], "correct_index": 1 },
+        { "question_id": "m3q2", "question": "Power operator in Python is:", "options": ["^", "**", "pow", "^^"], "correct_index": 1 },
+        { "question_id": "m3q3", "question": "Which is logical operator?", "options": ["+", "and", "==", "%"], "correct_index": 1 },
+        { "question_id": "m3q4", "question": "10 % 4 equals:", "options": ["2", "2.5", "6", "4"], "correct_index": 0 },
+        { "question_id": "m3q5", "question": "3 != 4 is:", "options": ["False", "True", "None", "0"], "correct_index": 1 }
+      ]
+    },
+    {
+      "module_id": "m4",
+      "title": "Conditional Statements",
+      "difficulty": "Easy",
+      "description": "Control flow using if, elif, else.",
+      "content": {
+        "explanation": "Conditional statements let programs make decisions based on conditions.",
+        "key_points": [
+          "if runs when condition is true.",
+          "elif checks additional conditions.",
+          "else runs when no condition matches."
+        ],
+        "example_code": "score = 78\nif score >= 90:\n    print(\"A\")\nelif score >= 75:\n    print(\"B\")\nelse:\n    print(\"C\")"
+      },
+      "quiz": [
+        { "question_id": "m4q1", "question": "Keyword for alternate condition is:", "options": ["else if", "elif", "elseif", "alternate"], "correct_index": 1 },
+        { "question_id": "m4q2", "question": "if condition checks:", "options": ["Always false", "Boolean expression", "Only numbers", "Only strings"], "correct_index": 1 },
+        { "question_id": "m4q3", "question": "Which runs if all above conditions fail?", "options": ["if", "elif", "else", "none"], "correct_index": 2 },
+        { "question_id": "m4q4", "question": "Indentation in Python blocks is:", "options": ["Optional", "Required", "Deprecated", "Ignored"], "correct_index": 1 },
+        { "question_id": "m4q5", "question": "if 5 > 2 prints?", "options": ["No", "Yes", "Error", "None"], "correct_index": 1 }
+      ]
+    },
+    {
+      "module_id": "m5",
+      "title": "Loops",
+      "difficulty": "Easy",
+      "description": "Repeat tasks using for and while loops.",
+      "content": {
+        "explanation": "Loops execute code repeatedly until a condition ends or items are exhausted.",
+        "key_points": [
+          "for loop iterates over sequences.",
+          "while loop runs until condition becomes false.",
+          "Use break and continue for loop control."
+        ],
+        "example_code": "for i in range(1, 4):\n    print(i)\n\nn = 3\nwhile n > 0:\n    print(n)\n    n -= 1"
+      },
+      "quiz": [
+        { "question_id": "m5q1", "question": "range(3) produces:", "options": ["1,2,3", "0,1,2", "0,1,2,3", "3 only"], "correct_index": 1 },
+        { "question_id": "m5q2", "question": "while loop stops when condition is:", "options": ["True", "False", "None", "Error"], "correct_index": 1 },
+        { "question_id": "m5q3", "question": "break does:", "options": ["Skips one step", "Ends loop", "Restarts loop", "No effect"], "correct_index": 1 },
+        { "question_id": "m5q4", "question": "continue does:", "options": ["Ends loop", "Skips current iteration", "Runs else", "None"], "correct_index": 1 },
+        { "question_id": "m5q5", "question": "Best loop for list traversal:", "options": ["if", "for", "while True always", "switch"], "correct_index": 1 }
+      ]
+    },
+    {
+      "module_id": "m6",
+      "title": "Functions",
+      "difficulty": "Medium",
+      "description": "Write reusable blocks of code.",
+      "content": {
+        "explanation": "Functions group logic into reusable units. They can take inputs and return outputs.",
+        "key_points": [
+          "Define with def keyword.",
+          "Parameters pass data into functions.",
+          "return sends result back."
+        ],
+        "example_code": "def add(a, b):\n    return a + b\n\nresult = add(4, 6)\nprint(result)"
+      },
+      "quiz": [
+        { "question_id": "m6q1", "question": "Function keyword in Python:", "options": ["func", "define", "def", "function"], "correct_index": 2 },
+        { "question_id": "m6q2", "question": "return is used to:", "options": ["Print value", "End function and send value", "Declare variable", "Loop"], "correct_index": 1 },
+        { "question_id": "m6q3", "question": "Arguments are:", "options": ["Function names", "Values passed to function", "Errors", "Comments"], "correct_index": 1 },
+        { "question_id": "m6q4", "question": "A function can have:", "options": ["0 parameters", "Many parameters", "Both", "Only 1"], "correct_index": 2 },
+        { "question_id": "m6q5", "question": "Reusable code is best achieved using:", "options": ["if", "loops only", "functions", "print"], "correct_index": 2 }
+      ]
+    },
+    {
+      "module_id": "m7",
+      "title": "Object-Oriented Programming",
+      "difficulty": "Medium",
+      "description": "Create classes and objects in Python.",
+      "content": {
+        "explanation": "OOP models real-world entities using classes (blueprints) and objects (instances).",
+        "key_points": [
+          "class defines attributes and methods.",
+          "self refers to current object.",
+          "Supports encapsulation and reuse."
+        ],
+        "example_code": "class Student:\n    def __init__(self, name):\n        self.name = name\n\n    def greet(self):\n        return f\"Hi, I am {self.name}\"\n\ns = Student(\"Ravi\")\nprint(s.greet())"
+      },
+      "quiz": [
+        { "question_id": "m7q1", "question": "A class is:", "options": ["An object", "A blueprint", "A loop", "A module"], "correct_index": 1 },
+        { "question_id": "m7q2", "question": "self refers to:", "options": ["Global scope", "Current object", "Class name", "Function"], "correct_index": 1 },
+        { "question_id": "m7q3", "question": "__init__ is:", "options": ["Destructor", "Constructor", "Operator", "Decorator"], "correct_index": 1 },
+        { "question_id": "m7q4", "question": "Object is created by:", "options": ["Calling class", "if statement", "import", "None"], "correct_index": 0 },
+        { "question_id": "m7q5", "question": "OOP helps in:", "options": ["Code organization", "Reuse", "Modeling", "All of these"], "correct_index": 3 }
+      ]
+    },
+    {
+      "module_id": "m8",
+      "title": "File Handling",
+      "difficulty": "Medium",
+      "description": "Read and write files in Python safely.",
+      "content": {
+        "explanation": "File handling allows storing and retrieving data permanently from files.",
+        "key_points": [
+          "Use open() with modes like r, w, a.",
+          "Use with to auto-close files.",
+          "read(), write(), and readline() are common."
+        ],
+        "example_code": "with open(\"notes.txt\", \"w\") as f:\n    f.write(\"Hello Python\")\n\nwith open(\"notes.txt\", \"r\") as f:\n    print(f.read())"
+      },
+      "quiz": [
+        { "question_id": "m8q1", "question": "File mode for reading:", "options": ["w", "a", "r", "x"], "correct_index": 2 },
+        { "question_id": "m8q2", "question": "File mode for appending:", "options": ["a", "r", "w", "rw"], "correct_index": 0 },
+        { "question_id": "m8q3", "question": "with open(...) is preferred because:", "options": ["Faster print", "Auto close", "No syntax", "No path"], "correct_index": 1 },
+        { "question_id": "m8q4", "question": "write() does:", "options": ["Reads file", "Writes text", "Deletes file", "Renames file"], "correct_index": 1 },
+        { "question_id": "m8q5", "question": "readline() returns:", "options": ["Whole file", "Single line", "List only", "Boolean"], "correct_index": 1 }
+      ]
+    },
+    {
+      "module_id": "m9",
+      "title": "Exception Handling",
+      "difficulty": "Medium",
+      "description": "Handle runtime errors gracefully.",
+      "content": {
+        "explanation": "Exceptions are runtime errors. Use try/except to keep your program stable.",
+        "key_points": [
+          "try block has risky code.",
+          "except catches errors.",
+          "finally runs cleanup code."
+        ],
+        "example_code": "try:\n    n = int(input(\"Enter number: \"))\n    print(10 / n)\nexcept ValueError:\n    print(\"Enter a valid number\")\nexcept ZeroDivisionError:\n    print(\"Cannot divide by zero\")\nfinally:\n    print(\"Done\")"
+      },
+      "quiz": [
+        { "question_id": "m9q1", "question": "Code that may fail goes inside:", "options": ["except", "try", "finally", "raise"], "correct_index": 1 },
+        { "question_id": "m9q2", "question": "except block is used to:", "options": ["Repeat code", "Handle errors", "Import file", "Define class"], "correct_index": 1 },
+        { "question_id": "m9q3", "question": "finally block runs:", "options": ["Only on success", "Only on error", "Always", "Never"], "correct_index": 2 },
+        { "question_id": "m9q4", "question": "ZeroDivisionError occurs when:", "options": ["Dividing by 1", "Dividing by 0", "Reading file", "Typing string"], "correct_index": 1 },
+        { "question_id": "m9q5", "question": "ValueError commonly happens when:", "options": ["Wrong type conversion", "Loop ends", "Class created", "File closes"], "correct_index": 0 }
+      ]
+    },
+    {
+      "module_id": "m10",
+      "title": "Basic Projects",
+      "difficulty": "Hard",
+      "description": "Apply Python concepts in mini real-world projects.",
+      "content": {
+        "explanation": "Projects strengthen understanding by combining variables, loops, functions, files, and exceptions.",
+        "key_points": [
+          "Start small and iterate.",
+          "Break project into functions.",
+          "Test using sample inputs."
+        ],
+        "example_code": "def todo_app():\n    tasks = []\n    while True:\n        action = input(\"add/view/exit: \")\n        if action == \"add\":\n            tasks.append(input(\"Task: \"))\n        elif action == \"view\":\n            print(tasks)\n        elif action == \"exit\":\n            break\n\ntodo_app()"
+      },
+      "quiz": [
+        { "question_id": "m10q1", "question": "Best way to start a project:", "options": ["Write huge code first", "Plan small steps", "Skip testing", "Avoid functions"], "correct_index": 1 },
+        { "question_id": "m10q2", "question": "To store tasks permanently, use:", "options": ["print", "file handling", "if", "range"], "correct_index": 1 },
+        { "question_id": "m10q3", "question": "Project debugging requires:", "options": ["Testing", "Ignoring errors", "Random edits", "No output"], "correct_index": 0 },
+        { "question_id": "m10q4", "question": "Reusable project code should use:", "options": ["Functions", "Only globals", "Only loops", "None"], "correct_index": 0 },
+        { "question_id": "m10q5", "question": "Mini projects help with:", "options": ["Practical understanding", "Confusion only", "No skill gain", "Syntax removal"], "correct_index": 0 }
+      ]
+    }
+  ]
+}

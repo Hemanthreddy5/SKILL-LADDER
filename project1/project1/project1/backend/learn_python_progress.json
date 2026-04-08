@@ -1,0 +1,12 @@
+{
+  "jobseeker2@gmail.com": {
+    "m1": {
+      "attempts": 1,
+      "best_score": 80,
+      "passed": true,
+      "completed": true,
+      "last_score": 80,
+      "updated_at": "2026-04-07T16:56:13.010427"
+    }
+  }
+}
