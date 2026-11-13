@@ -344,8 +344,8 @@ import re
 
 @app.post("/upload_resume")
 async def upload_resume(file: UploadFile = File(...)):
-    if not file.filename.lower().endswith(('.pdf', '.docx', '.doc')):
-        raise HTTPException(status_code=400, detail="Only PDF and DOCX files are supported.")
+    if not file.filename.lower().endswith(('.pdf',)):
+        raise HTTPException(status_code=400, detail="Only text-based PDF files are supported.")
     
     try:
         contents = await file.read()
@@ -354,10 +354,12 @@ async def upload_resume(file: UploadFile = File(...)):
         analysis_result = resume_parser.parse_resume(contents, file.filename)
         
         if "error" in analysis_result:
-            raise HTTPException(status_code=500, detail=analysis_result["error"])
+            raise HTTPException(status_code=422, detail=analysis_result["error"])
             
         return analysis_result
         
+    except HTTPException:
+        raise
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:

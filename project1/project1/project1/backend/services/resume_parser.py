@@ -117,7 +117,7 @@ class ResumeParser:
             found_in_category = []
             for skill in skill_list:
                 # Use word boundary search for better accuracy
-                if re.search(r'\b' + re.escape(skill.lower()) + r'\b', text_lower):
+                if re.search(r'(?<!\w)' + re.escape(skill.lower()) + r'(?![\w+#])', text_lower):
                     found_in_category.append(skill)
                     all_found.add(skill)
             if found_in_category:
